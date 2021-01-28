@@ -17,13 +17,14 @@ const HomeScreen = ({ navigation }) => {
       />
 
       <Button
-      onPress={()=> navigation.navigate("Image")}
-      title="Go to Image Demo"
+        onPress={()=> navigation.navigate("Image")}
+        title="Go to Image Demo"
       />
 
-      {/* <TouchableOpacity onPress={()=> props.navigation.navigate("List")}>
-        <Text>Hello</Text>
-      </TouchableOpacity> */}
+      <Button
+        onPress={()=> navigation.navigate("Counter")}
+        title="Go to Counter Demo"
+      />
 
     </View>
   ) 
