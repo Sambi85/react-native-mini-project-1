@@ -7,12 +7,21 @@ const ColorScreen = () => {
 
     return(
         <View>
-            <Button title="add Color" onPress={ ()=>{
-                setCounter(counter + 1)
-            }}/>
+            <Button title="Add a Color"/>
+            <View 
+            style={{ height: 100, width: 100, backgroundColor: 'rgb(0, 25, 0)' 
+        }}/>
         </View>
     );
 };
+
+const randomRGB = () => {
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
+
+    return `rgb(${red}, ${blue}, ${green})`
+}
 
 const styles = StyleSheet.create({});
 
