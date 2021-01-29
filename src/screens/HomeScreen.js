@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Text, StyleSheet, View, TouchableOpacity } from "react-native";
+import { Button, Text, StyleSheet, View } from "react-native";
 
 const HomeScreen = ({ navigation }) => {
   return (
@@ -24,6 +24,11 @@ const HomeScreen = ({ navigation }) => {
       <Button
         onPress={()=> navigation.navigate("Counter")}
         title="Go to Counter Demo"
+      />
+
+<Button
+        onPress={()=> navigation.navigate("Color")}
+        title="Go to Color Demo"
       />
 
     </View>
