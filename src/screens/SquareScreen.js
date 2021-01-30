@@ -75,4 +75,5 @@ const SquareScreen = () => {
 
 const styles = StyleSheet.create({});
 
+
 export default SquareScreen;
